@@ -191,12 +191,12 @@
               document.getElementById("txtfoodcart").value = JSON.stringify(checkout);
           }
                   
-              function displayList() {
-                document.getElementById("myList").innerHTML = "";
-                for(var i=0; i<contactlist.length; i++) {
-                    document.getElementById("myList").innerHTML += '<li class="list-group-item" onclick="show()" id="'+ i + '">' + contactlist[i].name + '</li>';
+          function displayList() {
+                document.getElementById("list").innerHTML = "";
+                for(var i=0; i<items.length; i++) {
+                    document.getElementById("list").innerHTML += '<li class="list-group-item" onclick="show()" id="'+ i + '">' + items[i].name + '</li>';
                 }
-            }
+          }
 
             function addToList(item) {
                 let fullname = document.getElementById("nameInput").value;
@@ -207,9 +207,9 @@
                 document.getElementById("addressInput").value = "";
                 document.getElementById("contactInput").value = "";
                 console.log(person);
-                contactlist.push(person);
+                list.push(items);
                 displayList();
-                localStorage.setItem("contactlist",JSON.stringify(contactlist));
+                localStorage.setItem("list",JSON.stringify(list));
             }
 
             function getItem() {
@@ -220,14 +220,14 @@
             function show() {
                 var i = [];
                 let index = event.srcElement.id;
-                document.getElementById("nameInput").value = contactlist[index].name;
-                document.getElementById("addressInput").value = contactlist[index].address;
-                document.getElementById("contactInput").value = contactlist[index].number;  
+                document.getElementById("nameInput").value = list[index].name;
+                document.getElementById("addressInput").value = list[index].address;
+                document.getElementById("contactInput").value = list[index].number;  
             }
 
             function loadList() {
-                if(JSON.parse(localStorage.getItem('contactlist') != null))
-                    contactlist = JSON.parse(localStorage.getItem('contactlist'));
+                if(JSON.parse(localStorage.getItem('list') != null))
+                    list = JSON.parse(localStorage.getItem('list'));
                 displayList();
             }
           </script> 
