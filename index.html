@@ -10,227 +10,234 @@
     </head>
     <body onload="loadList()">
       <main>
-          <div id="logo">
-          <img src="logo.png" alt="logo">
+        <div id="logo">
+        <img src="logo.png" alt="logo">
+        </div>
+        <div id="text">
+        <div id="title">Welcome to KFI!</div>
+        <div id="subtitle">King, Fiel, and Ingrid Resto and Bar</div>
+        </div>
+    </main>
+        <section id="kings-choice">
+          <h3>King's Choice</h3>
+          <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="yakisoba.png" class="card-img-top" alt="Yakisoba">
+                  <div class="card-body">
+                    <h5 class="card-title">Yakisoba</h5>
+                    <p class="card-text">PHP 170.00</p>
+                    <button class="btn btn-primary" id="1" value="Yakisoba" onclick="postItem()">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="carrot-cake.png" class="card-img-top" alt="Carrot Cake (Slice)">
+                  <div class="card-body">
+                    <h5 class="card-title">Carrot Cake Slice</h5>
+                    <p class="card-text">PHP 80.00</p>
+                    <button class="btn btn-primary" id="2" value="Carrot Cake" onclick="postItem()">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="matcha-latte.png" class="card-img-top" alt="Matcha Latte">
+                  <div class="card-body">
+                    <h5 class="card-title">Matcha Latte</h5>
+                    <p class="card-text">PHP 120.00</p>
+                    <button class="btn btn-primary" id="3" value="Matcha Latte" onclick="postItem()">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div id="text">
-          <div id="title">Welcome to KFI!</div>
-          <div id="subtitle">King, Fiel, and Ingrid Resto and Bar</div>
+        </section>
+        <section id="fiels-favorites">
+          <h3>Fiel's Favorites</h3>
+          <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="carbonara.png" class="card-img-top" alt="Carbonara">
+                  <div class="card-body">
+                    <h5 class="card-title">Carbonara</h5>
+                    <p class="card-text">PHP 140.00</p>
+                    <button class="btn btn-primary" id="4" value="Carbonara" onclick="postItem()">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="pancakes.png" class="card-img-top" alt="Pancakes">
+                  <div class="card-body">
+                    <h5 class="card-title">Pancakes</h5>
+                    <p class="card-text">PHP 90.00</p>
+                    <button class="btn btn-primary" id="5" value="Pancakes" onclick="postItem()">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="iced-tea.png" class="card-img-top" alt="Iced Tea">
+                  <div class="card-body">
+                    <h5 class="card-title">Iced Tea</h5>
+                    <p class="card-text">PHP 80.00</p>
+                    <button class="btn btn-primary" id="6" value="Iced Tea" onclick="postItem()">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-      </main>
-          <section id="kings-choice">
-            <h3>King's Choice</h3>
-            <div class="container text-center">
-              <div class="row align-items-start">
-                <div class="col">
-                  <div class="card" style="width: 18rem;">
-                    <img src="yakisoba.png" class="card-img-top" alt="Yakisoba">
-                    <div class="card-body">
-                      <h5 class="card-title">Yakisoba</h5>
-                      <p class="card-text">PHP 170.00</p>
-                      <button class="btn btn-primary" id="1" value="Yakisoba" onclick="postItem()">Add to cart</button>
-                    </div>
+        </section>
+        <section id="ingrids-picks">
+          <h3>Ingrid's Picks</h3>
+          <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="sushi-rolls.png" class="card-img-top" alt="Sushi Rolls">
+                  <div class="card-body">
+                    <h5 class="card-title">Sushi Rolls</h5>
+                    <p class="card-text">PHP 130.00</p>
+                    <button class="btn btn-primary" id="7" value="card3item1" onclick="postItem()">Add to cart</button>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem;">
-                    <img src="carrot-cake.png" class="card-img-top" alt="Carrot Cake (Slice)">
-                    <div class="card-body">
-                      <h5 class="card-title">Carrot Cake Slice</h5>
-                      <p class="card-text">PHP 80.00</p>
-                      <button class="btn btn-primary" id="2" value="Carrot Cake" onclick="postItem()">Add to cart</button>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="assorted-donuts.png" class="card-img-top" alt="Assorted Donuts">
+                  <div class="card-body">
+                    <h5 class="card-title">Assorted Donuts</h5>
+                    <p class="card-text">PHP 140.00</p>
+                    <button class="btn btn-primary" id="8" value="card3item2" onclick="postItem()">Add to cart</button>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem;">
-                    <img src="matcha-latte.png" class="card-img-top" alt="Matcha Latte">
-                    <div class="card-body">
-                      <h5 class="card-title">Matcha Latte</h5>
-                      <p class="card-text">PHP 120.00</p>
-                      <button class="btn btn-primary" id="3" value="Matcha Latte" onclick="postItem()">Add to cart</button>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="water-bottle.png" class="card-img-top" alt="Bottled Water">
+                  <div class="card-body">
+                    <h5 class="card-title">Bottled Water</h5>
+                    <p class="card-text">PHP 20.00</p>
+                    <button class="btn btn-primary" id="9" value="card3item3" onclick="postItem()">Add to cart</button>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <section id="fiels-favorites">
-            <h3>Fiel's Favorites</h3>
-            <div class="container text-center">
-              <div class="row align-items-start">
-                <div class="col">
-                  <div class="card" style="width: 18rem;">
-                    <img src="carbonara.png" class="card-img-top" alt="Carbonara">
-                    <div class="card-body">
-                      <h5 class="card-title">Carbonara</h5>
-                      <p class="card-text">PHP 140.00</p>
-                      <button class="btn btn-primary" id="4" value="Carbonara" onclick="postItem()">Add to cart</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem;">
-                    <img src="pancakes.png" class="card-img-top" alt="Pancakes">
-                    <div class="card-body">
-                      <h5 class="card-title">Pancakes</h5>
-                      <p class="card-text">PHP 90.00</p>
-                      <button class="btn btn-primary" id="5" value="Pancakes" onclick="postItem()">Add to cart</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem;">
-                    <img src="iced-tea.png" class="card-img-top" alt="Iced Tea">
-                    <div class="card-body">
-                      <h5 class="card-title">Iced Tea</h5>
-                      <p class="card-text">PHP 80.00</p>
-                      <button class="btn btn-primary" id="6" value="Iced Tea" onclick="postItem()">Add to cart</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="ingrids-picks">
-            <h3>Ingrid's Picks</h3>
-            <div class="container text-center">
-              <div class="row align-items-start">
-                <div class="col">
-                  <div class="card" style="width: 18rem;">
-                    <img src="sushi-rolls.png" class="card-img-top" alt="Sushi Rolls">
-                    <div class="card-body">
-                      <h5 class="card-title">Sushi Rolls</h5>
-                      <p class="card-text">PHP 130.00</p>
-                      <button class="btn btn-primary" id="7" value="card3item1" onclick="postItem()">Add to cart</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem;">
-                    <img src="assorted-donuts.png" class="card-img-top" alt="Assorted Donuts">
-                    <div class="card-body">
-                      <h5 class="card-title">Assorted Donuts</h5>
-                      <p class="card-text">PHP 140.00</p>
-                      <button class="btn btn-primary" id="8" value="card3item2" onclick="postItem()">Add to cart</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem;">
-                    <img src="water-bottle.png" class="card-img-top" alt="Bottled Water">
-                    <div class="card-body">
-                      <h5 class="card-title">Bottled Water</h5>
-                      <p class="card-text">PHP 20.00</p>
-                      <button class="btn btn-primary" id="9" value="card3item3" onclick="postItem()">Add to cart</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="check-out">
-            <h3 id="checkout">Check Out</h3>
-            <ul id="list" class="list-group"></ul>
-            <ul id="list-2" class="list-group">
-              <li class="list-group-item">Total: <span id="totalcheckout"> 0</span></li>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link"><img src="leftarrow.png" alt="leftarrow" class="arrow"></a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="index.html">1</a></li> <!--Category 1-->
+              <li class="page-item"><a class="page-link" href="page2.html">2</a></li> <!--Category 2-->
+              <li class="page-item"><a class="page-link" href="page3.html">3</a></li> <!--Category 3-->
+              <li class="page-item"><a class="page-link" href="page4.html">4</a></li> <!--Category 4-->
+              <li class="page-item">
+                <a class="page-link" href="page2.html"><img src="rightarrow.png" alt="rightarrow" class="arrow"></a>
+              </li>
             </ul>
-            <br>
-            <form action="http://sirjm.infinityfreeapp.com/aa2receiver.php" autocomplete="off" class="sign-up-form">
-              <div class="form-group">
-                <div class="input-wrap">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <label>Customer name</label>
-                  <input type="text" minlength="1" class="input-field" name="custname" autocomplete="off" required>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <label>Delivery address</label>
-                  <input type="text" minlength="1" class="input-field" name="deliveryaddr" autocomplete="off" required>
-                </div>
-              </div>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <div class="form-group">
-                <div class="form-check form-check-inline input-wrap">
-                  <input id="home" type="radio" name="addrtype" value="Home" class="form-check-input">
-                  <label for="home" class="form-check-label">Home</label>
-                </div>
-                <div class="form-check form-check-inline input-wrap">
-                  <input id="business" type="radio" name="addrtype" value="Business" class="form-check-input">
-                  <label for="business" class="form-check-label">Business</label>
-                </div>
-              </div>
+          </nav>
+        </section>
+        <section id="check-out">
+          <h3 id="checkout">Check Out</h3>
+          <ul id="list" class="list-group"></ul>
+          <ul id="list-2" class="list-group">
+            <li class="list-group-item">Total: <span id="totalcheckout"> 0</span></li>
+          </ul>
+          <br>
+          <form action="http://sirjm.infinityfreeapp.com/aa2receiver.php" autocomplete="off" class="sign-up-form">
+            <div class="form-group">
+              <div class="input-wrap">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Customer name</label>
+                <input type="text" minlength="1" class="input-field" name="custname" autocomplete="off" required>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="submit" value="Place Order" class="sign-btn">
-              <input type="hidden" name="foodcart" id="txtfoodcart" value=''>
-              <input type="hidden" name="restoname" id="txtrestoname" value='KFI'>
-            </form>
-          </section>
-          <footer><h6>&copy; 2023 Erika Fiel C. Danac, Ingrid Dominique S. Sampang, and King Harold Emmanuel M. Valera</h6></footer>
+                <label>Delivery address</label>
+                <input type="text" minlength="1" class="input-field" name="deliveryaddr" autocomplete="off" required>
+              </div>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="form-group">
+              <div class="form-check form-check-inline input-wrap">
+                <input id="home" type="radio" name="addrtype" value="Home" class="form-check-input">
+                <label for="home" class="form-check-label">Home</label>
+              </div>
+              <div class="form-check form-check-inline input-wrap">
+                <input id="business" type="radio" name="addrtype" value="Business" class="form-check-input">
+                <label for="business" class="form-check-label">Business</label>
+              </div>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="Place Order" class="sign-btn">
+            <input type="hidden" name="foodcart" id="txtfoodcart" value=''>
+            <input type="hidden" name="restoname" id="txtrestoname" value='KFI'>
+          </form>
+        </section>
+        <footer><h6>&copy; 2023 Erika Fiel C. Danac, Ingrid Dominique S. Sampang, and King Harold Emmanuel M. Valera</h6></footer>
+        <br>
           <script>
-          var checkout = [];
-  
-          var total = 0;
-  
-          var items = [
-            {foodname: 'Yakisoba', foodprice: 170},
-            {foodname: 'Carrot Cake Slice', foodprice: 80},
-            {foodname: 'Matcha Latte', foodprice: 120},
-            {foodname: 'Carbonara', foodprice: 140},
-            {foodname: 'Pancakes', foodprice: 90},
-            {foodname: 'Iced Tea', foodprice: 80},
-            {foodname: 'Sushi Rolls', foodprice: 130},
-            {foodname: 'Assorted Donuts', foodprice: 140},
-            {foodname: 'Bottled Water', foodprice: 20}
-          ];
-  
-          function postItem() {
-              let item = event.srcElement.id-1
-              document.getElementById("list").innerHTML += "<li class='list-group-item'>" + items[item].foodname + " " + items[item].foodprice + "</li>";
-              checkout.push(items[item]);
-              total = total + items[item].foodprice;
-              document.getElementById("totalcheckout").innerHTML = total;
-              document.getElementById("txtfoodcart").value = JSON.stringify(checkout);
-          }
+            setTimeout(() => {loadList();}, 100);
+
+            var checkout = [];
+
+            var list = document.getElementById("list").value;
+    
+            var total = 0;
+    
+            var items = [
+              {foodname: 'Yakisoba', foodprice: 170},
+              {foodname: 'Carrot Cake Slice', foodprice: 80},
+              {foodname: 'Matcha Latte', foodprice: 120},
+              {foodname: 'Carbonara', foodprice: 140},
+              {foodname: 'Pancakes', foodprice: 90},
+              {foodname: 'Iced Tea', foodprice: 80},
+              {foodname: 'Sushi Rolls', foodprice: 130},
+              {foodname: 'Assorted Donuts', foodprice: 140},
+              {foodname: 'Bottled Water', foodprice: 20},
+            ];
+    
+            function postItem() {
+                let item = event.srcElement.id-1
+                document.getElementById("list").innerHTML += '<li class="list-group-item" id="'+ i + '">' + items[item].foodname + " " + items[item].foodprice + '</li>';
+                checkout.push(items[item]);
+                total = total + items[item].foodprice;
+                document.getElementById("totalcheckout").innerHTML = total;
+                document.getElementById("txtfoodcart").value = JSON.stringify(checkout);
+            }
                   
-          function displayList() {
-                document.getElementById("list").innerHTML = "";
-                for(var i=0; i<items.length; i++) {
-                    document.getElementById("list").innerHTML += '<li class="list-group-item" onclick="show()" id="'+ i + '">' + items[i].name + '</li>';
+                document.getElementById("txtfoodcart").value = JSON.stringify();
+
+                function addToList(item) {
+                    let itemname = document.getElementById("list").value;
+                    let itemprice = document.getElementById("list-2").value;
+                    let order = {fooditem: itemname, foodprice: itemprice};
+                    console.log(order);
+                    checkout.push(order);
+                    postItem();
+                    localStorage.setItem("checkout",JSON.stringify(checkout));
                 }
-          }
 
-            function addToList(item) {
-                let fullname = document.getElementById("nameInput").value;
-                let address = document.getElementById("addressInput").value;
-                let number = document.getElementById("contactInput").value;
-                let person = {name: fullname, address: address, number: number};
-                document.getElementById("nameInput").value = "";
-                document.getElementById("addressInput").value = "";
-                document.getElementById("contactInput").value = "";
-                console.log(person);
-                list.push(items);
-                displayList();
-                localStorage.setItem("list",JSON.stringify(list));
-            }
+                function getItem() {
+                    var i = document.getElementById("list").value;
+                    addToList(i);
+                }
 
-            function getItem() {
-                var i = document.getElementById("nameInput").value;
-                addToList(i);
-            }
+                function show() {
+                    var i = [];
+                    let index = event.srcElement.id;
+                    document.getElementById("list").value = checkout[index].fooditem;
+                }
 
-            function show() {
-                var i = [];
-                let index = event.srcElement.id;
-                document.getElementById("nameInput").value = list[index].name;
-                document.getElementById("addressInput").value = list[index].address;
-                document.getElementById("contactInput").value = list[index].number;  
-            }
-
-            function loadList() {
-                if(JSON.parse(localStorage.getItem('list') != null))
-                    list = JSON.parse(localStorage.getItem('list'));
-                displayList();
-            }
-          </script> 
-           
-  </body>
+                function loadList() {
+                if(JSON.parse(localStorage.getItem('checkout') != null))
+                    checkout = JSON.parse(localStorage.getItem('checkout'));
+                postItem();
+                }
+            </script> 
+    </body>
 </html>
