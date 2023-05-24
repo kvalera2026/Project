@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #e0218a;
+}
+
+header h1{
+    color: white;
+    font-family: 'Lobster Two', cursive;
+    font-size: 70px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-item{
+    font-family: 'Helvetica', sans-serif;
+}
+
+#featured h2{
+    font-family: 'Helvetica';
+    margin-bottom: 3%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+#dolls h2{
+    font-family: 'Helvetica';
+    margin-bottom: 3%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+#dollhouses h2{
+    font-family: 'Helvetica';
+    margin-bottom: 3%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+#playsets h2{
+    font-family: 'Helvetica';
+    margin-bottom: 3%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+#clothes-closets h2{
+    font-family: 'Helvetica';
+    margin-bottom: 3%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+#cars-vehicles h2{
+    font-family: 'Helvetica';
+    margin-bottom: 3%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+#furniture h2{
+    font-family: 'Helvetica';
+    margin-bottom: 3%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+#lego h2{
+    font-family: 'Helvetica';
+    margin-bottom: 3%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+main{
+    background-color: rgb(255, 234, 238);
+}
+
+.card{
+    margin: auto;
+    width: 33%;
+}
+
+footer{
+    background-color: whitesmoke;
+    font-family: 'Helvetica', sans-serif;
+    height: 50px;
+    padding-top: 1%;
+    text-align: center;
+}
