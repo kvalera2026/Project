@@ -95,3 +95,13 @@ footer{
     padding-top: 1%;
     text-align: center;
 }
+
+footer a{
+    color: #e0218a;
+    text-decoration: none;
+}
+
+.container p{
+    font-family:'Helvetica';
+    text-align: center;
+}
