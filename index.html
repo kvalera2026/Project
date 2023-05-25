@@ -646,12 +646,12 @@
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <label>Address</label>
               <input type="text" minlength="1" class="input-field" name="cust_addr" autocomplete="off" required>
+              <input type="hidden" name="cust_order" id="txtfoodorder" value=''>
             </div>
           </div>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input type="submit" value="Place Order" class="sign-btn">
-          <input type="hidden" name="cust_order" id="txtfoodcart" value=''>
         </form>
       </section>
   </section>                                                                           
@@ -667,67 +667,67 @@
             var total = 0;
 
             var items = [
-              {itemname: 'Barbie Fashionistas Doll #208, Barbie Doll With Down Syndrome Wearing Floral Dress', itemprice: 11},
-              {itemname: 'Ken Doll, Barbie Looks, Brown Hair, Color Block Tee & Blue Shorts', itemprice: 22},
-              {itemname: 'Barbie 2022 Día De Muertos Doll In Ruffled Dress And Calavera Face Paint', itemprice: 80},
-              {itemname: 'Barbie 3-Story Townhouse', itemprice: 115},
-              {itemname: 'Barbie Dream Boat Playset With Pool, Slide And 20+ Accessories', itemprice: 70},
-              {itemname: 'Barbie Closet Playset With 30+ Accessories, 5 Complete Looks, Rotating Clothing Rack, Dream Closet', itemprice: 55},
-              {itemname: 'Barbie Emergency Vehicle Transforms Into Care Clinic With 20+ Pieces', itempricce: 60},
-              {itemname: 'Barbie Careers Musician Doll & Playset, Blond', itemprice: 23},
-              {itemname: 'MEGA Barbie Color Reveal Train N Wash Pets Building Toy With 2 Micro-Dolls (152 Pieces)', itemprice: 27},
-              {itemname: 'Barbie Looks Doll, Natural Black Hair, Color Block Crop Top', itemprice: 22},
-              {itemname: 'Barbie Looks Doll, Blonde, Color Block Outfit With Waist Cut-Out', itemprice: 22},
-              {itemname: 'Ken Doll, Barbie Looks, Black Hair, Purple Top With Pink Pants', itemprice: 22},
-              {itemname: 'Barbie Looks Doll, Brunette, Color Block One-Shoulder Midi Dress', itemprice: 22},
-              {itemname: 'Barbie Doll, Birthday Wishes, Giftable, Blonde In Pink Dress', itemprice: 30},
-              {itemname: 'Barbie Looks Doll, Curly Red Hair, Color Block Outfit With Miniskirt', itemprice: 22},
-              {itemname: 'Barbie Doll House, Chelsea Playhouse With 2 Pets And 15+ Accessories' , itemprice: 55},
-              {itemname: 'Barbie Dollhouse, Portable 1-Story Playset With Pool And Accessories', itemprice: 45},
-              {itemname: 'Barbie Dollhouse With 2 Levels & 4 Play Areas, Fully Furnished, Gift For 3 To 7 Year Olds', itemprice: 45},
-              {itemname: 'Barbie Glam Getaway House', itemprice: 45},
-              {itemname: 'Barbie Estate Malibu House Playset With 25+ themed Accessories', itemprice: 115},
-              {itemname: 'Barbie Dollhouse And Furniture Set With 3 Dolls', itemprice: 155},
-              {itemname: 'Barbie Vacation House Playset With 30+ Pieces, Toy For 3 Year Olds & Up', itemprice: 115},
-              {itemname: 'Barbie Panda Care And Rescue Playset With Doll And 20+ Accessories, Plus Color Change Feature', itemprice: 34},
-              {itemname: 'Barbie Club Chelsea Bedtime Doll And Bedroom Playset', itemprice: 17},
-              {itemname: 'Barbie Sets, Preschool Toys, My First Barbie Tea Party Playset', itemprice: 30},
-              {itemname: 'Barbie Ultimate Closet Doll And Playset Portable Fashion Toy With Doll, Clothes And Accessories', itemprice: 37},
-              {itemname: 'Barbie It Takes Two Camping Playset With Tent, 2 Barbie Dolls & Accessories', itemprice: 55},
-              {itemname: 'Barbie Fashions 2-Pack Clothing & Accessories Set Includes Hoodie Dress', itemprice: 10},
-              {itemname: 'Barbie Extra Pet & Fashion Pack With Pet Fox, Fashion Pieces & Accessories', itemprice: 11},
-              {itemname: 'Barbie Extra Pet & Fashion Pack With Pet Lamb, Fashion Pieces & Accessories', itemprice: 11},
-              {itemname: 'Barbie Clothes 2 Outfits & 2 Accessories For Barbie Doll', itemprice: 11},
-              {itemname: 'Barbie Ken Clothes 2 Outfits & 2 Accessories For Barbie & Ken Dolls', itemprice: 11},
-              {itemname: 'Barbie Extra Pet & Fashion Pack With Pet Teddy Bear, Fashion Pieces & Accessories', itemprice: 11},
-              {itemname: 'Barbie Car, Barbie Extra Set With Sparkly 2-Seater Toy Convertible', itemprice: 33},
-              {itemname: 'Barbie Dolphin Magic Ocean View Boat With 3-Puppies & Accessories', itemprice: 33},
-              {itemname: 'Barbie Club Chelsea Doll (6-Inch Blonde) With Open-Top Rainbow Unicorn-themed Car & Pet Puppy', itemprice: 17},
-              {itemname: 'Barbie Doll And Bike Playset With Doll (11.5 In, Blonde) & Bicycle', itemprice: 23},
-              {itemname: 'Barbie: Big City, Big Dreams Transforming Vehicle Playset, Gift For 3 To 7 Year Olds', itemprice: 43},
-              {itemname: 'Barbie Fresh n Fun Food Truck', itemprice: 55},
-              {itemname: 'Barbie Baby Doctor Doll', itemprice: 23},
-              {itemname: 'Barbie Doll And Gardening Playset With Pet And Accessories, Gift For 3 To 7 Year Olds', itemprice: 23},
-              {itemname: 'Barbie Doll, Skipper High Chair And Crib Playset, Babysitters Inc.', itemprice: 23},
-              {itemname: 'Barbie Pet And Accessories Set With Head-Nodding Puppy And 10+ Storytelling Pieces', itemprice: 11},
-              {itemname: 'Barbie Ultimate Kitchen', itemprice: 55},
-              {itemname: 'Barbie Careers Chicken Farmer Doll & Chicken Coop Playset', itemprice: 23},
-              {itemname: 'MEGA Barbie Color Reveal Dreamhouse Toy Building Set', itemprice: 75},
-              {itemname: 'MEGA Barbie Pets Horse Jumping Building Toy Playset With Horse, Pony, Micro-Doll (73 Pieces)', itemprice: 11},
-              {itemname: 'MEGA Barbie Adventure Dreamcamper Building Set (123 Pieces)', itemprice: 22},
-              {itemname: 'MEGA Barbie Color Reveal Dolphin Exploration Building Toy With 15 Surprises (121 Pieces)', itemprice: 27},
-              {itemname: 'MEGA Barbie Malibu House Building Set (303 Pieces)', itemprice: 33},
-              {itemname: 'MEGA Barbie Horse Stables Building Set, 304 Bricks And Pieces With Fashion And Roleplay Accessories', itemprice: 43}
+              {prod_name: 'Barbie Fashionistas Doll #208, Barbie Doll With Down Syndrome Wearing Floral Dress', prod_price: 11},
+              {prod_name: 'Ken Doll, Barbie Looks, Brown Hair, Color Block Tee & Blue Shorts', prod_price: 22},
+              {prod_name: 'Barbie 2022 Día De Muertos Doll In Ruffled Dress And Calavera Face Paint', prod_price: 80},
+              {prod_name: 'Barbie 3-Story Townhouse', prod_price: 115},
+              {prod_name: 'Barbie Dream Boat Playset With Pool, Slide And 20+ Accessories', prod_price: 70},
+              {prod_name: 'Barbie Closet Playset With 30+ Accessories, 5 Complete Looks, Rotating Clothing Rack, Dream Closet', prod_price: 55},
+              {prod_name: 'Barbie Emergency Vehicle Transforms Into Care Clinic With 20+ Pieces', prod_price: 60},
+              {prod_name: 'Barbie Careers Musician Doll & Playset, Blond', prod_price: 23},
+              {prod_name: 'MEGA Barbie Color Reveal Train N Wash Pets Building Toy With 2 Micro-Dolls (152 Pieces)', itemprice: 27},
+              {prod_name: 'Barbie Looks Doll, Natural Black Hair, Color Block Crop Top', prod_price: 22},
+              {prod_name: 'Barbie Looks Doll, Blonde, Color Block Outfit With Waist Cut-Out', prod_price: 22},
+              {prod_name: 'Ken Doll, Barbie Looks, Black Hair, Purple Top With Pink Pants', prod_price: 22},
+              {prod_name: 'Barbie Looks Doll, Brunette, Color Block One-Shoulder Midi Dress', prod_price: 22},
+              {prod_name: 'Barbie Doll, Birthday Wishes, Giftable, Blonde In Pink Dress', prod_price: 30},
+              {prod_name: 'Barbie Looks Doll, Curly Red Hair, Color Block Outfit With Miniskirt', prod_price: 22},
+              {prod_name: 'Barbie Doll House, Chelsea Playhouse With 2 Pets And 15+ Accessories' ,prod_price: 55},
+              {prod_name: 'Barbie Dollhouse, Portable 1-Story Playset With Pool And Accessories', prod_price: 45},
+              {prod_name: 'Barbie Dollhouse With 2 Levels & 4 Play Areas, Fully Furnished, Gift For 3 To 7 Year Olds', v: 45},
+              {prod_name: 'Barbie Glam Getaway House', prod_price: 45},
+              {prod_name: 'Barbie Estate Malibu House Playset With 25+ themed Accessories', prod_price: 115},
+              {prod_name: 'Barbie Dollhouse And Furniture Set With 3 Dolls', prod_price: 155},
+              {prod_name: 'Barbie Vacation House Playset With 30+ Pieces, Toy For 3 Year Olds & Up', prod_price: 115},
+              {prod_name: 'Barbie Panda Care And Rescue Playset With Doll And 20+ Accessories, Plus Color Change Feature', prod_price: 34},
+              {prod_name: 'Barbie Club Chelsea Bedtime Doll And Bedroom Playset', prod_price: 17},
+              {prod_name: 'Barbie Sets, Preschool Toys, My First Barbie Tea Party Playset', prod_price: 30},
+              {prod_name: 'Barbie Ultimate Closet Doll And Playset Portable Fashion Toy With Doll, Clothes And Accessories', prod_price: 37},
+              {prod_name: 'Barbie It Takes Two Camping Playset With Tent, 2 Barbie Dolls & Accessories', prod_price: 55},
+              {prod_name: 'Barbie Fashions 2-Pack Clothing & Accessories Set Includes Hoodie Dress', prod_price: 10},
+              {prod_name: 'Barbie Extra Pet & Fashion Pack With Pet Fox, Fashion Pieces & Accessories', prod_price: 11},
+              {prod_name: 'Barbie Extra Pet & Fashion Pack With Pet Lamb, Fashion Pieces & Accessories', prod_price: 11},
+              {prod_name: 'Barbie Clothes 2 Outfits & 2 Accessories For Barbie Doll', prod_price: 11},
+              {prod_name: 'Barbie Ken Clothes 2 Outfits & 2 Accessories For Barbie & Ken Dolls', prod_price: 11},
+              {prod_name: 'Barbie Extra Pet & Fashion Pack With Pet Teddy Bear, Fashion Pieces & Accessories', prod_price: 11},
+              {prod_name: 'Barbie Car, Barbie Extra Set With Sparkly 2-Seater Toy Convertible', prod_price: 33},
+              {prod_name: 'Barbie Dolphin Magic Ocean View Boat With 3-Puppies & Accessories', prod_price: 33},
+              {prod_name: 'Barbie Club Chelsea Doll (6-Inch Blonde) With Open-Top Rainbow Unicorn-themed Car & Pet Puppy', prod_price: 17},
+              {prod_name: 'Barbie Doll And Bike Playset With Doll (11.5 In, Blonde) & Bicycle', prod_price: 23},
+              {prod_name: 'Barbie: Big City, Big Dreams Transforming Vehicle Playset, Gift For 3 To 7 Year Olds', prod_price: 43},
+              {prod_name: 'Barbie Fresh n Fun Food Truck', prod_price: 55},
+              {prod_name: 'Barbie Baby Doctor Doll', prod_price: 23},
+              {prod_name: 'Barbie Doll And Gardening Playset With Pet And Accessories, Gift For 3 To 7 Year Olds', prod_price: 23},
+              {prod_name: 'Barbie Doll, Skipper High Chair And Crib Playset, Babysitters Inc.', prod_price: 23},
+              {prod_name: 'Barbie Pet And Accessories Set With Head-Nodding Puppy And 10+ Storytelling Pieces', prod_price: 11},
+              {prod_name: 'Barbie Ultimate Kitchen', prod_price: 55},
+              {prod_name: 'Barbie Careers Chicken Farmer Doll & Chicken Coop Playset', prod_price: 23},
+              {prod_name: 'MEGA Barbie Color Reveal Dreamhouse Toy Building Set', prod_price: 75},
+              {prod_name: 'MEGA Barbie Pets Horse Jumping Building Toy Playset With Horse, Pony, Micro-Doll (73 Pieces)', prod_price: 11},
+              {prod_name: 'MEGA Barbie Adventure Dreamcamper Building Set (123 Pieces)', prod_price: 22},
+              {prod_name: 'MEGA Barbie Color Reveal Dolphin Exploration Building Toy With 15 Surprises (121 Pieces)', prod_price: 27},
+              {prod_name: 'MEGA Barbie Malibu House Building Set (303 Pieces)', prod_price: 33},
+              {prod_name: 'MEGA Barbie Horse Stables Building Set, 304 Bricks And Pieces With Fashion And Roleplay Accessories', prod_price: 43}
             ];
 
             function postItem() {
                 
                 let item = event.srcElement.id-1
-                document.getElementById("list").innerHTML += '<li class="list-group-item">' + '<div class="col-lg-4">' + items[item].itemname + '</div>' + '<div class="col-lg-4">' + items[item].itemprice + '</div>' + '<button class="btn btn-sm btn-secondary" onclick="removeItem(i)">Remove Item</button>' + '</li>';
+                document.getElementById("list").innerHTML += '<li class="list-group-item">' + '<div class="col-lg-4">' + items[item].prod_name + '</div>' + '<div class="col-lg-4">' + items[item].prod_price + '</div>' + '<button class="btn btn-sm btn-secondary" onclick="removeItem(i)">Remove Item</button>' + '</li>';
                 checkout.push(items[item]);
-                total = total + items[item].itemprice;
+                total = total + items[item].prod_price;
                 document.getElementById("totalcheckout").innerHTML = total;
-                document.getElementById("txtfoodcart").value = JSON.stringify(checkout);
+                document.getElementById("txtfoodorder").value = JSON.stringify(checkout);
                 localStorage.setItem("checkout",JSON.stringify(checkout));
             }
 
@@ -746,26 +746,30 @@
               if(JSON.parse(localStorage.getItem('checkout') != null))
                   checkout = JSON.parse(localStorage.getItem('checkout'));
               console.log(checkout);
+              total = 0;
+              document.getElementById("totalcheckout").innerHTML = total;
+              console.log(total);
+              document.getElementById("list").innerHTML = "";
               for(i=0; i<checkout.length; i++){
-                document.getElementById("list").innerHTML += '<li class="list-group-item">' + '<div class="col-lg-9">' + checkout[i].itemname + '</div>' + '<div class="col-lg-4">' + "$" + checkout[i].itemprice + '</div>' + '<button class="btn btn-sm btn-secondary" onclick="removeItem(i)">Remove Item</button>' + '</li>';
-              total = total + checkout[i].itemprice;
+              document.getElementById("list").innerHTML += '<li class="list-group-item">' + '<div class="col-lg-9">' + checkout[i].prod_name + '</div>' + '<div class="col-lg-4">' + "$" + checkout[i].prod_price + '</div>' + '<button class="btn btn-sm btn-secondary" onclick="removeItem(i)">Remove Item</button>' + '</li>';
+              console.log(total);
+              total = total + checkout[i].prod_price;
               document.getElementById("totalcheckout").innerHTML = total;
               }
-              postItem();
             }
 
             function deleteItems() {
             localStorage.clear();
             }
 
-            function removeItem(i) {
-              checkout.pop();
-              total = total - items[item].itemprice;
-              document.getElementById("totalcheckout").innerHTML = total;
-              document.getElementById("list").innerHTML = '<li class="list-group-item">' + '</li>';
+            function removeItem() {
+              let index = event.srcElement.id;
+              checkout.splice(index, 1);
+              let JSONfriend = JSON.stringify(checkout);
+              localStorage.setItem("checkout", JSONfriend);
+              loadList();
             }
 
-            document.getElementById("txtfoodcart").value = JSON.stringify(prod_name, prod_price);
           </script>
         </body>
     </html>
