@@ -105,3 +105,10 @@ footer a{
     font-family:'Helvetica';
     text-align: center;
 }
+
+#checkout{
+    font-family: 'Helvetica';
+    margin-bottom: 3%;
+    padding-top: 3%;
+    text-align: center;
+}
